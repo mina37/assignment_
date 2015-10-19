@@ -16,7 +16,7 @@ public:
 	Person(const string & ln, const char * fn = "Heyyou")
 	{
 		lname = ln;
-		for (int i = 0; i < 25;i++)
+		for (int i = 0; i < 7;i++)
 		{
 			fname[i] = fn[i];
 		}
@@ -24,11 +24,11 @@ public:
 	 // the following methods display lname and fname
 	void Show()
 	{
-		cout << fname << " " << lname;
+		cout << fname << " " << lname<<endl;
 	} // firstname lastname format
 	void FormalShow()
 	{
-		cout << fname << " " << lname;
+		cout << fname << " " << lname<<endl;
 	}// lastname, firstname format
 	/*Person(char fn[])
 	{
@@ -47,7 +47,7 @@ int main()
 	cin >> fn;
 	cout << "Enter your last name" << endl;
 	string ln;
-	getline(cin, ln);
+	cin >> ln;
 	Person p1, p2(ln), p3(ln,fn);
 	p2.Show();
 	p3.FormalShow();
