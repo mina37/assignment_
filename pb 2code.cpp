@@ -16,7 +16,7 @@ public:
 	Person(const string & ln, const char * fn = "Heyyou")
 	{
 		lname = ln;
-		for (int i = 0; i < 7;i++)
+		for (int i = 0; i < 25;i++)
 		{
 			fname[i] = fn[i];
 		}
@@ -30,14 +30,14 @@ public:
 	{
 		cout << fname << " " << lname;
 	}// lastname, firstname format
-	Person(char fn[])
+	/*Person(char fn[])
 	{
 		for (int i = 0; i < 25; i++)
 		{
 			fname[i] = fn[i];
 		}
 		lname ="";
-	}
+	}*/
 };
 
 int main()
